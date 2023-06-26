@@ -1,12 +1,12 @@
 from aiogram import Bot, Dispatcher, types, executor
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-import osteo_bot.config
+import user_bot.config
 from user_bot_admin import UserBotAdmin
 from calendar_admin import CalendarAdmin
 from db_admin import DBADMIN
 
-bot = Bot(osteo_bot.config.token)
+bot = Bot(user_bot.config.token)
 dp = Dispatcher(bot)
 
 user_bot_admin = UserBotAdmin()
